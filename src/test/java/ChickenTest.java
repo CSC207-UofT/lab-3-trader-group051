@@ -29,7 +29,7 @@ public class ChickenTest {
     @Test(timeout = 50)
     public void TestEggStolen() {
         c.eggStolen();
-        assertEquals(0, c.getEggsLaid());
+        assertEquals(-1, c.getEggsLaid());
     }
 
     @Test(timeout = 50)
