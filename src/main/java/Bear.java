@@ -2,11 +2,11 @@
  */
 public class Bear implements Drivable, Domesticatable, Tradable{
 
-
-    private int maxspeed;
+// maxspeed is an int that represent the max speed of of the Bear
+    private int maxSpeed;
 
     public Bear(){
-        this.maxspeed = 0;
+        this.maxSpeed = 0;
     }
 
     @Override
@@ -16,17 +16,17 @@ public class Bear implements Drivable, Domesticatable, Tradable{
 
     @Override
     public void upgradeSpeed() {
-        this.maxspeed++;
+        this.maxSpeed++;
     }
 
     @Override
     public void downgradeSpeed() {
-        this.maxspeed--;
+        this.maxSpeed--;
     }
 
     @Override
     public int getMaxSpeed() {
-        return this.maxspeed;
+        return this.maxSpeed;
     }
 
     @Override
